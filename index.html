@@ -10,35 +10,62 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <header>
-        <div class="header-left">
-            <p>
-            <a href="#">About</a>
-            <a href="#">Store</a>
-            </p>
-        </div>
-        <div class="header-right">
-            <p>
-            <a href="#">Gmail</a>
-            <a href="#">Images</a>
-            <a href="#">*9 Squares Button*</a>
-            <a href="#">Sign In</a>
-            </p>
-        </div>
-    </header>
-    <div class="center">
-        Google Logo
-        Search Bar
-        I'm Feeling Lucky
-    </div>
-    <div class="footer">
-        Advertising
-        Business
-        How Search works
-
-        Privacy
-        Terms
-        Settings
-    </div>
+    <article>
+        <header>
+            <div class="header-left">
+                <p>
+                <a href="#">About</a>
+                <a href="#">Store</a>
+                </p>
+            </div>
+            <div class="header-right">
+                <p>
+                <a id="gmail-link" title="gmail link" href="#">Gmail</a>
+                <a id="images-link" title="images link" href="#">Images</a>
+                <a href="#">
+                    <button id="signin-button">Sign In</button>
+                </a>
+                </p>
+            </div>
+        </header>
+        <main>
+            <div class="center">
+                <a href="#">
+                    <div id="google-logo">
+                        <img src="images/googlelogo_color_272x92dp.png" alt="Google Logo">
+                    </div>
+                </a>
+                <div class="search-bar">
+                    <button id="magnify"></button>
+                    <span id="search-content" contenteditable="true"></span>
+                    <button id="microphone"></button>
+                </div>
+                <div id="buttons">
+                    <button class="search-buttons">
+                        Google Search
+                    </button>
+                    <button class="search-buttons">
+                        I'm Feeling Lucky
+                    </button>
+                </div>
+            </div>
+        </main>
+        <footer>
+            <div class="footer-left">
+                <p>
+                    <a href="#">Advertising</a>
+                    <a href="#">Business</a>
+                    <a href="#">How Search works</a>
+                </p>
+            </div>
+            <div class="footer-right">
+                <p>
+                    <a href="#">Privacy</a>
+                    <a href="#">Terms</a>
+                    <a href="#">Settings</a>
+                </p>
+            </div>
+        </footer>
+    </article>
 </body>
 </html>

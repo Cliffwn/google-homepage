@@ -1,8 +1,39 @@
-p {
-    font-family: 'Open Sans', sans-serif;
+html, body {
+    margin: 0;
+    height: 100%;
 }
 
-.header-left a:link {
+body {
+    font-family: 'Open Sans', sans-serif;
+    font-size: 14px;
+}
+
+article {
+    min-height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: stretch;
+}
+
+header {
+    display: flex;
+    height: 47px;
+    justify-content: space-between;
+    align-items: center;
+}
+
+main {
+    flex-grow: 1;
+}
+
+footer {
+    display: flex;
+    background-color: #f2f2f2;
+    justify-content: space-between;
+    margin-bottom: 0;
+}
+
+.header-left a:link, .header-left a:visited {
     display: inline-block;
     padding-left: 15px;
     color: #000;
@@ -10,11 +41,19 @@ p {
     text-decoration: none;
 }
 
-.header-left a:hover {
+.footer-left a:link, .footer-left a:visited {
+    display: inline-block;
+    padding-left: 15px;
+    color: #5F6368;
+    opacity: 0.75;
+    text-decoration: none;
+}
+
+.header-left a:hover, .footer-left a:hover {
     text-decoration: underline;
 }
 
-.header-right a:link {
+.header-right a:link, .header-right a:visited {
     display: inline-block;
     padding-right: 15px;
     color: #000;
@@ -22,6 +61,106 @@ p {
     text-decoration: none;
 }
 
-.header-right a:hover {
+.footer-right a:link, .footer-right a:visited {
+    display: inline-block;
+    padding-right: 15px;
+    color: #5F6368;
+    opacity: 0.75;
+    text-decoration: none;
+}
+
+.header-right a:hover, .footer-right a:hover {
     text-decoration: underline;
+}
+
+.center {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+#google-logo {
+    padding: 75% 0px 0px;
+}
+
+.search-bar {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    height: 44px;
+    width: 50%;
+    border: 1px solid #dfe1e5;
+    border-radius: 24px;
+    margin-top: 25px;
+    margin-bottom: 25px;
+}
+
+#buttons {
+    display: flex;
+}
+
+.search-buttons {
+    display: block;
+    width: 140px;
+    height: 30px;
+    background-color: #f2f2f2;
+    color: #5F6368;
+    border: none;
+    padding: 10px 10px 25px 10px;
+    margin-left: 10px;
+    margin-right: 10px;
+    border-radius: 4px;
+    text-align: center;
+}
+
+#microphone {
+    width: 25px;
+    height: 25px;
+    display: block;
+    margin-right: 10px;
+    border: none;
+    background: transparent;
+    background-image: url(https://www.gstatic.com/images/branding/googlemic/2x/googlemic_color_24dp.png);
+    background-repeat: no-repeat;
+    background-size: contain;
+    cursor: pointer;
+    float: right;
+}
+
+#magnify {
+    width: 20px;
+    height: 20px;
+    display: block;
+    margin-left: 12px;
+    border: none;
+    background: transparent;
+    background-image: url(https://img.icons8.com/android/24/000000/search.png);
+    background-repeat: no-repeat;
+    background-size: contain;
+    cursor: pointer;
+}
+
+#search-content {
+    margin-right: auto;
+    margin-left: 20px;
+}
+
+[contenteditable] {
+    outline: 0px solid transparent;
+  }
+
+#signin-button {
+    width: 75px;
+    height: 30px;
+    background-color: #4285f4;
+    color: azure;
+    border-radius: 4px;
+    border: none;
+}
+
+#signin-button:active {
+    background-color: #4285f4;
+    border-style: outset;
 }
